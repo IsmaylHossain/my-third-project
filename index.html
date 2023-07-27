@@ -3,9 +3,404 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>My third project</title>
 </head>
-<body>
-    
+<body class="px-8 pt-8 lg:px-0">
+    <header>
+        <nav>
+            <div class="navbar container hidden lg:flex bg-red-500 rounded-full max-w-screen-xl mx-auto max-h-28">
+                <div class="navbar-start align-baseline ">
+                  <div class="menu">
+                     
+                    <ul  class="flex w-52 text-white">
+                      <li class="pr-1"><a>Homepage</a></li>
+                      <li class="pr-2"><a>Portfolio</a></li>
+                      <li class="pr-2"><a>About</a></li>
+                      <li class="pr-2"><a>About</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center btn btn-ghost">
+                    <img class="w-10" src="./images/logo.png" alt="">
+                  <a class=" normal-case text-white text-3xl">Fruit Burst</a>
+                </div>
+                <div class="navbar-end ">
+                   <div class="flex ml-auto mr-2 btn w-80 bg-white justify-between  rounded-full items-center">
+                    <p class="pl-4 text-gray-400 normal-case">Search here</p>
+                    <button class=" bg-white border-none  rounded-full  ">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
+                   </div>
+                </div>
+              </div>
+        </nav>
+       
+         <nav>
+          <div class=" container flex lg:hidden bg-white rounded-full mx-auto justify-between">
+            <div class=" btn btn-ghost">
+              <img class="w-8" src="./images/logo.png" alt="">
+            <a class=" normal-case text-black text-xl">Fruit Burst</a>
+          </div>
+            <div class=" ">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class=" menu-sm dropdown-content relative z-[1]  shadow bg-base-100 rounded-box w-32 right-8 p-4">
+                  <li><a>Homepage</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>About</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav> 
+    </header>
+    <section class="rounded-lg">
+      <div class="carousel flex max-w-screen-md   lg:max-w-screen-xl mx-auto py-10 rounded-lg">
+        <div id="slide1" class="carousel-item relative w-full rounded-lg">
+          <div class="hero rounded-xl" style="background-image: url(./images/banner-1.png);">
+            <div class="hero-overlay bg-opacity-20"></div>
+            <div class="hero-content text-center text-neutral-content p-8 md:p-20 lg:p-40">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-primary bg-red-500 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero rounded-lg" style="background-image: url(./images/banner-2.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-primary bg-red-500 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero rounded-lg " style="background-image: url(./images/banner-3.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-primary bg-red-500 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="hero rounded-lg" style="background-image: url(./images/banner-4.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-3xl md:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn btn-primary bg-red-500 border-none">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto max-w-screen-xl flex flex-col text-center py-10">
+        <div class="container mx-auto lg:flex lg:justify-between  justify-center py-10">
+          <div class=" max-w-xl flex  flex-col lg:text-left justify-center text-center">
+            <h1 class="mb-5 text-5xl font-bold">Deal of the day</h1>
+            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
+              Latin literature from 45 BC, making it over 2000 years old.</p>
+             
+          </div>
+          <div class="grid grid-flow-col gap-5 justify-center text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:49;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+        <div class=" max-w-7xl mx-auto py-5 ">
+          <div class=" lg:flex-row gap-2 flex flex-col justify-between">
+            <div class="card w-80 bg-base-100 shadow-xl pt-4 border-2">
+              <figure class=""><img src="/images/fruit-6.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">12.90$ - 18.85$</h2><hr>
+                <p class="text-center">Orange</p>
+                <div class="rating justify-center">
+                  <img  src="./images/star.svg" alt="">
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="card-title">Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-80 bg-base-100 shadow-xl p-4 border-2">
+              <figure class=""><img src="/images/fruit-7.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">12.90$ - 18.85$</h2><hr>
+                <p class="text-center">Orange</p>
+                <div class="rating justify-center">
+                  <img  src="./images/star.svg" alt="">
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="card-title">Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-80 bg-base-100 shadow-xl p-4 border-2">
+              <figure class=""><img src="/images/fruit-8.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">12.90$ - 18.85$</h2><hr>
+                <p class="text-center">Orange</p>
+                <div class="rating justify-center">
+                  <img  src="./images/star.svg" alt="">
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="card-title">Details</button>
+                </div>
+              </div>
+            </div>
+            <div class="card w-80 bg-base-100 shadow-xl p-4 border-2">
+              <figure class=""><img src="/images/fruit-9.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">12.90$ - 18.85$</h2><hr>
+                <p class="text-center">Orange</p>
+                <div class="rating justify-center">
+                  <img  src="./images/star.svg" alt="">
+                </div>
+                <div class="card-actions justify-center">
+                  <button class="card-title">Details</button>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+       <div class=" flex justify-center py-5">
+        <button class="btn btn-primary bg-red-500 border-none">Shop Now</button>
+       </div>
+      </div>
+    </section> 
+    <section>
+      <div class="container mx-auto max-w-7xl ">
+        <div class=" hero  bg-no-repeat bg-cover " style="background-image: url(./images/team.png);  ">
+          <div class="hero-overlay bg-opacity-60"></div>  
+        <div class="p-10 pt-20">
+          <div class="flex justify-center text-white text-center sm:px-10">
+            <div class="max-w-2xl">
+              <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+              <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
+                Latin literature from 45 BC, making it over 2000 years old.</p>
+               
+            </div>
+             
+          </div>
+          <div class="text-white lg:flex gap-4">
+            <div class="card p-4">
+              <figure class=""><img src="/images/member-1.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">Awlad Hossain</h2> 
+                <p class="text-center">Fruits Expert</p>
+                <div class="rating gap-2 justify-center">
+                  <img  src="./images/facebook-1.svg" alt="">
+                  <img  src="./images/twitter-1.svg" alt="">
+                  <img  src="./images/linkedin-1.svg" alt="">
+                </div>
+                 
+              </div>
+            </div>
+            <div class="card  p-4">
+              <figure class=""><img src="/images/member-2.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">Safia Chowdhury</h2> 
+                <p class="text-center">Fruits Expert</p>
+                <div class="rating gap-2 justify-center">
+                  <img  src="./images/facebook-1.svg" alt="">
+                  <img  src="./images/twitter-1.svg" alt="">
+                  <img  src="./images/linkedin-1.svg" alt="">
+                </div>
+                 
+              </div>
+            </div>
+            <div class="card  p-4">
+              <figure class=""><img src="/images/member-3.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">Rokib Hossain</h2> 
+                <p class="text-center">Fruits Expert</p>
+                <div class="rating gap-2 justify-center">
+                  <img  src="./images/facebook-1.svg" alt="">
+                  <img  src="./images/twitter-1.svg" alt="">
+                  <img  src="./images/linkedin-1.svg" alt="">
+                </div>
+                 
+              </div>
+            </div>
+            <div class="card  p-4">
+              <figure class=""><img src="/images/member-4.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center hr-line">Chaity</h2>
+                <p class="text-center">Fruits Expert</p>
+                <div class="rating gap-2 justify-center">
+                  <img  src="./images/facebook-1.svg" alt="">
+                  <img  src="./images/twitter-1.svg" alt="">
+                  <img  src="./images/linkedin-1.svg" alt="">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section> 
+    <section>
+      <div class="container mx-auto max-w-7xl">
+        <div class="flex justify-center  text-center">
+          <div class="max-w-2xl">
+            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
+              Latin literature from 45 BC, making it over 2000 years old.</p>
+             
+          </div>
+           
+        </div>
+        <div class="lg:grid grid-cols-3 gap-4">
+        <div>
+          <div class="flex items-start  text-left mb-4">
+            <div class="rounded-full bg-gray-300 p-6 mt-2 mr-4">
+              <img src="./images/group-1.svg" alt="">
+            </div>
+            <div class="max-w-2xl">
+              <h1 class="mb-2 text-2xl font-bold">Dedicated Team</h1> <hr   class=" w-32 h-0.5 mb-2 bg-black">
+              <p class="mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex items-start  text-left mb-4">
+            <div class="rounded-full bg-gray-300 p-6 mt-2 mr-4">
+              <img src="./images/group-1.svg" alt="">
+            </div>
+            <div class="max-w-2xl">
+              <h1 class="mb-2 text-2xl font-bold">Dedicated Team</h1> <hr   class=" w-32 h-0.5 mb-2 bg-black">
+              <p class="mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex items-start  text-left">
+            <div class="rounded-full bg-gray-300 p-6 mt-2 mr-4">
+              <img src="./images/group-1.svg" alt="">
+            </div>
+            <div class="max-w-2xl">
+              <h1 class="mb-2 text-2xl font-bold">Dedicated Team</h1> <hr   class=" w-32 h-0.5 mb-2 bg-black">
+              <p class="mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+           
+        </div>
+        <div class=" card">
+          <img src="./images/whychoose.png" alt="">
+        </div>
+        <div>
+          <div class="flex justify-end items-start  text-right mb-4">
+            
+            <div class="max-w-2xl">
+              <h1 class="mb-2 text-2xl font-bold">Dedicated Team</h1> <hr   class="ml-auto w-32 h-0.5 mb-2 bg-black">
+              <p class="mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="rounded-full bg-gray-300 p-6 mt-2 ml-4">
+              <img src="./images/group-1.svg" alt="">
+            </div>
+          </div>
+          <div class="flex justify-end items-start  text-right mb-4">
+            
+            <div class="max-w-2xl">
+              <h1 class="mb-2 text-2xl font-bold">Dedicated Team</h1> <hr   class="ml-auto w-32 h-0.5 mb-2 bg-black">
+              <p class="mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="rounded-full bg-gray-300 p-6 mt-2 ml-4">
+              <img src="./images/group-1.svg" alt="">
+            </div>
+          </div>
+          <div class="flex justify-end items-start  text-right ">
+            
+            <div class="max-w-2xl">
+              <h1 class="mb-2 text-2xl font-bold">Dedicated Team</h1> <hr   class="ml-auto w-32 h-0.5 mb-2 bg-black">
+              <p class="mb-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="rounded-full bg-gray-300 p-6 mt-2 ml-4">
+              <img src="./images/group-1.svg" alt="">
+            </div>
+          </div> 
+        </div>
+        </div>
+      </div>
+    </section> 
+    <footer class="footer footer-center p-10 bg-black text-base-content rounded text-white">
+      <div class="navbar-center btn btn-ghost flex">
+        <img class="w-10" src="./images/logo.png" alt="">
+      <a class=" normal-case text-white text-3xl">Fruit Burst</a>
+    </div>
+      <div class="md:grid md:grid-flow-col gap-4">
+        <div class="grid grid-flow-col gap-4">
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About Ust</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a>
+        </div>
+        <div class="grid grid-flow-col gap-4">
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a></div>
+      </div> 
+      <div>
+        <div class="grid grid-flow-col gap-4">
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        </div>
+      </div> 
+       
+    </footer>
 </body>
 </html>
